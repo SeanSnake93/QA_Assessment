@@ -16,7 +16,7 @@
 
 
 
-	# <QUESTION 1>
+	# <QUESTION 1> DONE
 
 	# Define a function that can accept two strings as input and returns the string with maximum length to the console. 
 	
@@ -35,13 +35,14 @@
 	# What was the name of the function we have seen to check the length of a container?  Use your CLI to access the Python documentation and get help(len).
 
 def one(input1, input2):
-	if input1 input2
-	return ""
+	if len(input1) < len(input2):
+		return input2
+	elif len(input1) > len(input2):
+		return input1
+	elif len(input1) == len(input2):
+		return input1 + input2
 
-
-come back to it
-
-	# <QUESTION 2>
+	# <QUESTION 2> DONE
 
     # Return the string that is between the first and last appearance of "bert" in the given string
 	
@@ -63,17 +64,12 @@ come back to it
 	
 	# Use your CLI to access the Python documentation and get help manipulating strings - help(str).
 
-two("bertclivebert")
-
-two("xxbeRTyy")
-
 def two(input):
-	if input == "%bert%":
-
-	return ""
-
-
-
+    if input.lower().count("bert") == 2:
+        Templist = input.lower().split("bert")
+        return Templist[1]
+    elif input.lower().count("bert") == 1:
+        return ""	
 
 	# <QUESTION 3> DONE
 
@@ -107,7 +103,8 @@ def three(arg1):
 
 	# <QUESTION 4>
 
-    # Given a string seperate the string into the individual numbers present, then add each digit of each number to get a final value for each number
+    # Given a string seperate the string into the individual numbers present,
+	# then add each digit of each number to get a final value for each number
 
 	# String example = "55 72 86"
 	
@@ -128,7 +125,10 @@ def three(arg1):
 	# help(int) for working with numbers and help(str) for working with Strings.
 
 def four(arg1):
-	return 0
+	TempList = arg1.split()
+	for i in range(len(TempList)):
+        TempList(str(TempList[i]))
+	return
 
 	# <QUESTION 5>
 
@@ -158,7 +158,7 @@ def four(arg1):
 def five(input):
 	return []
 
-	# <QUESTION 6>
+	# <QUESTION 6> DONE
 
     # There is a well known mnemonic which goes "I before E, except after C", which is used to determine
 	# which order "ei" or "ie" should be in a word.
@@ -179,9 +179,9 @@ def five(input):
 
 
 def six(input):
-	if input.lower == "cei%" or input.lower == "%cei%":
+	if input.find("cei%") or input.fine("%cei%"):
 		return True
-	elif input.lower == "ie%" or input.lower == "%ie%":
+	elif input.find("ie%") or input.find("%ie%"):
 		return False
 
 	# <QUESTION 7>
