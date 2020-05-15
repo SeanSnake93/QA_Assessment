@@ -116,8 +116,6 @@ def three(arg1):
 	 
     # <EXAMPLES>
 
-shvwehuofvhweoihfv
-
 	# four("55 72 86") → 14
 	# four("15 72 80 164") → 11
 	# four("555 72 86 45 10") → 15
